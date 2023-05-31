@@ -1,7 +1,7 @@
 from threading import Thread
 from flask import Flask
 
-app = Flask('ChatGPT-Discord-Bot')
+app = Flask('Bart-Discord-Bot')
 
 
 @app.route('/')
@@ -10,7 +10,7 @@ def home():
 
 
 def server_run():
-    app.run(host='0.0.0.0', port=8080)
+    app.run(host='0.0.0.0', port=8081)
 
 
 def keep_alive():

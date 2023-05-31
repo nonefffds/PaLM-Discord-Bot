@@ -6,12 +6,10 @@ class ModelInterface:
         pass
 
 class BardModel(ModelInterface):
-
-    # When using Azure OpenAI API, use following lines. Original OpenAI API are being commented below
     
     def __init__(self,
                api_key: str):
-        palm.configure(api_key)
+        palm.configure(api_key = "BARD_API_KEY")
 
     def chat_completion(self, messages) -> str:
         response = palm.chat(messages=messages)
