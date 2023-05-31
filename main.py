@@ -10,7 +10,7 @@ from src.memory import Memory
 from src.server import keep_alive
 
 
-models = BardModel(api_key= "OPENAI_API")
+models = BardModel(api_key= "PaLM_API")
 memory = Memory(system_message= "SYSTEM_MESSAGE")
 bard = Bard(models, memory)
 
