@@ -9,8 +9,8 @@ Sort of working, I guess.
 **Google PaLM API only works in the United States.**
 
 ## Example:
-![](https://github.com/nonefffds/Bard-Discord-Bot/blob/main/image/test.png)
-![](https://github.com/nonefffds/Bard-Discord-Bot/blob/main/image/test2.png)
+![](https://github.com/nonefffds/PaLM-Discord-Bot/blob/main/image/test.png)
+![](https://github.com/nonefffds/PaLM-Discord-Bot/blob/main/image/test2.png)
 
 ## Command
 
@@ -34,13 +34,13 @@ Sort of working, I guess.
 12. Copy the link at bottom into your browser, add bot and authorize to you server.
 ### Get your PaLM API
 1. Join the waitlist [here](https://developers.generativeai.google/), after you passed the waitlist, you'll receive an email like this:
-![](https://github.com/nonefffds/Bard-Discord-Bot/blob/main/image/welcome.png)
+![](https://github.com/nonefffds/PaLM-Discord-Bot/blob/main/image/welcome.png)
 1. Go [MakerSuite](https://makersuite.google.com/), and create an API key for this application.
 ### Deploy on your machine
 1. Star this project I guess
 2. git clone this repository
 3. `pip install discord google-generativeai`
-4. `cd Bard-Discord-Bot`
+4. `cd PaLM-Discord-Bot`
 5. `nano main.py`
 6. replace with your Discord API Key and PaLM API Key at following lines:
 `palm.configure(api_key = "PaLM_API_KEY")`

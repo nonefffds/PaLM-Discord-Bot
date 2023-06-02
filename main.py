@@ -6,13 +6,13 @@ import google.generativeai as palm
 from src.server import keep_alive
 
 # Set up the PaLM API
-palm.configure(api_key = "BARD_API_KEY")
+palm.configure(api_key = "PaLM_API_KEY")
 model = palm.types.Model(
     name = "models/chat-bison-001",
     base_model_id= "chat-bison",
     version= "001",
-    display_name= "the Bard",
-    description= "the PaLM Bard",
+    display_name= "the Bison",
+    description= "the PaLM Bison",
     input_token_limit= 150,
     output_token_limit= 150,
     supported_generation_methods= ["generateMessage"],
@@ -28,7 +28,7 @@ def run():
     client = DiscordClient()
     sender = Sender()
 
-    @client.tree.command(name="bard", description="Have a chat with Bard")
+    @client.tree.command(name="palm", description="Have a chat with PaLM Bison")
     async def chat(interaction: discord.Interaction, *, message: str):
         user_id = interaction.user.id
         if interaction.user == client.user:

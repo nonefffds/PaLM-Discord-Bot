@@ -11,7 +11,7 @@ class DiscordClient(discord.Client):
         self.synced = False
         self.added = False
         self.tree = discord.app_commands.CommandTree(self)
-        self.activity = discord.Activity(type=discord.ActivityType.watching, name="/bard")
+        self.activity = discord.Activity(type=discord.ActivityType.watching, name="/palm")
 
     async def on_ready(self):
         await self.wait_until_ready()
@@ -33,4 +33,4 @@ class Sender():
             logger.info(f"{user_id} sent: {send}, response: {receive}")
         except Exception as e:
             await interaction.followup.send('> **Error: Something went wrong, please try again later!**')
-            logger.exception(f"Error while sending:{send} in bard model, error: {e}")
+            logger.exception(f"Error while sending:{send} in PaLM model, error: {e}")
