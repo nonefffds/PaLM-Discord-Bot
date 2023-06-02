@@ -13,8 +13,8 @@ model = palm.types.Model(
     version= "001",
     display_name= "the Bison",
     description= "the PaLM Bison",
-    input_token_limit= 150,
-    output_token_limit= 150,
+    input_token_limit= 145,
+    output_token_limit= 145,
     supported_generation_methods= ["generateMessage"],
 )
 

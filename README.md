@@ -1,12 +1,21 @@
 # PaLM-Discord-Bot
 
-PaLM API in Discord.
-
-Sort of working, I guess.
+Google PaLM API in Discord.
 
 ![](https://img.shields.io/badge/License-MIT-lightgrey)
 
 **Google PaLM API only works in the United States.**
+
+## Notice
+
+Discord only can handle 2000 characters per message, so I manually set the PaLM can only outputting no more than 145 tokens. If your channel can handle 4000 or even more, make the `output_token_limit= 145` in `main.py` value doubled or more.
+
+Also, I dropped the temperature option, you can always add it back.
+
+## To-do
+
+- Use .env instead
+- Integrate this with any other AIGC APIs and make this more versatile?
 
 ## Example:
 ![](https://github.com/nonefffds/PaLM-Discord-Bot/blob/main/image/test.png)
@@ -50,6 +59,9 @@ Sort of working, I guess.
 If you want to run it background, you can try Screen.
 
 ## Reference: 
+
+Huge thanks to following projects.
+
 https://github.com/TheExplainthis/ChatGPT-Discord-Bot
 
 https://discordpy.readthedocs.io/en/stable/#getting-started
