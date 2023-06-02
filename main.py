@@ -1,5 +1,5 @@
 import os
-
+import discord
 from src.discordBot import DiscordClient, Sender
 from src.logger import logger
 #from src.models import BardModel
@@ -9,11 +9,11 @@ from src.server import keep_alive
 
 palm.configure(api_key = "BARD_API_KEY")
 
-def chat_completion(self, message) -> str:
+def chat_completion(message: str) -> str:
 # Get the PaLM API response
     response = palm.chat(messages=message, candidate_count = 0)
     output = response.messages[1]
-    print (output['content'])
+    return output['content']
 
 def run():
     client = DiscordClient()
