@@ -2,12 +2,18 @@ import os
 
 from src.discordBot import DiscordClient, Sender
 from src.logger import logger
-from src.models import BardModel
+#from src.models import BardModel
+import google.generativeai as palm
 from src.server import keep_alive
 
 
-models = BardModel(api_key= "PaLM_API_KEY")
+palm.configure(api_key = "BARD_API_KEY")
 
+def chat_completion(self, message) -> str:
+# Get the PaLM API response
+    response = palm.chat(messages=message, candidate_count = 0)
+    output = response.messages[1]
+    print (output['content'])
 
 def run():
     client = DiscordClient()
@@ -19,7 +25,7 @@ def run():
         if interaction.user == client.user:
             return
         await interaction.response.defer()
-        receive = models.chat_completion(message)
+        receive = chat_completion(message)
         await sender.send_message(interaction, message, receive)
 
 
