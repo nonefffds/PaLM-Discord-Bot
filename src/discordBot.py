@@ -11,7 +11,7 @@ class DiscordClient(discord.Client):
         self.synced = False
         self.added = False
         self.tree = discord.app_commands.CommandTree(self)
-        self.activity = discord.Activity(type=discord.ActivityType.watching, name="/chat | /reset | /imagine")
+        self.activity = discord.Activity(type=discord.ActivityType.watching, name="/bard")
 
     async def on_ready(self):
         await self.wait_until_ready()
@@ -33,15 +33,4 @@ class Sender():
             logger.info(f"{user_id} sent: {send}, response: {receive}")
         except Exception as e:
             await interaction.followup.send('> **Error: Something went wrong, please try again later!**')
-            logger.exception(f"Error while sending:{send} in chatgpt model, error: {e}")
-
-    async def send_image(self, interaction, send, receive):
-        try:
-            user_id = interaction.user.id
-            response = f'> **{send}** - <@{str(user_id)}> \n\n'
-            await interaction.followup.send(response)
-            await interaction.followup.send(receive)
-            logger.info(f"{user_id} sent: {send}, response: {receive}")
-        except Exception as e:
-            await interaction.followup.send('> **Error: Something went wrong, please try again later!**')
-            logger.exception(f"Error while sending:{send} in dalle model, error: {e}")
+            logger.exception(f"Error while sending:{send} in bard model, error: {e}")
