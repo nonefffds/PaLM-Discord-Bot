@@ -7,7 +7,16 @@ from src.server import keep_alive
 
 # Set up the PaLM API
 palm.configure(api_key = "BARD_API_KEY")
-model = palm.Model(output_token_limit=500)
+model = palm.types.Model(
+    name = "models/chat-bison-001",
+    base_model_id= "chat-bison",
+    version= "001",
+    display_name= "the Bard",
+    description= "the PaLM Bard",
+    input_token_limit= 150,
+    output_token_limit= 150,
+    supported_generation_methods= ["generateMessage"],
+)
 
 def chat_completion(message: str) -> str:
 # Get the PaLM API response

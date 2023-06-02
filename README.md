@@ -7,14 +7,6 @@ Sort of working, I guess.
 ![](https://img.shields.io/badge/License-MIT-lightgrey)
 
 **Google PaLM API only works in the United States.**
-## Known issue:
-
-- Longer messages sometimes can't be sent, it'll put an error message: 
-
-  ``discord.errors.HTTPException: 400 Bad Request (error code: 50035): Invalid Form Body
-In content: Must be 2000 or fewer in length. ``
-
-This happened everytime I ask questions about Frank Wright(architect), other questions seems just fine. I'll look that later.
 
 ## Example:
 ![](https://github.com/nonefffds/Bard-Discord-Bot/blob/main/image/test.png)
