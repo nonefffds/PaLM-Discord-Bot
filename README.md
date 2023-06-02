@@ -1,4 +1,4 @@
-# Bard-Discord-Bot
+# PaLM-Discord-Bot
 
 PaLM API in Discord.
 
@@ -14,7 +14,7 @@ Sort of working, I guess.
 
 ## Command
 
-`/bard` to chat with PaLM.
+`/palm` to chat with PaLM.
 
 ## Installation
 
@@ -43,7 +43,7 @@ Sort of working, I guess.
 4. `cd Bard-Discord-Bot`
 5. `nano main.py`
 6. replace with your Discord API Key and PaLM API Key at following lines:
-`palm.configure(api_key = "BARD_API_KEY")`
+`palm.configure(api_key = "PaLM_API_KEY")`
 `client.run("DISCORD_TOKEN")`
 7. `python3 main.py`
 
@@ -51,7 +51,9 @@ If you want to run it background, you can try Screen.
 
 ## Reference: 
 https://github.com/TheExplainthis/ChatGPT-Discord-Bot
+
 https://discordpy.readthedocs.io/en/stable/#getting-started
+
 https://developers.generativeai.google/api/python/google/generativeai
 
 ## License:
