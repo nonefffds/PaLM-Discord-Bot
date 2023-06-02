@@ -4,6 +4,8 @@ PaLM API in Discord.
 
 Sort of working, I guess.
 
+![](https://img.shields.io/badge/License-MIT-lightgrey)
+
 **Google PaLM API only works in the United States.**
 ## Known issue:
 
@@ -18,7 +20,7 @@ In content: Must be 2000 or fewer in length. ``
 
 ## Command
 
-`/bard` to chat.
+`/bard` to chat with PaLM.
 
 ## Installation
 
@@ -55,6 +57,8 @@ If you want to run it background, you can try Screen.
 
 ## Reference: 
 https://github.com/TheExplainthis/ChatGPT-Discord-Bot
+https://discordpy.readthedocs.io/en/stable/#getting-started
+https://developers.generativeai.google/api/python/google/generativeai
 
 ## License:
 This work is under MIT License.
