@@ -4,7 +4,7 @@ Google PaLM API in Discord.
 
 ![](https://img.shields.io/badge/License-MIT-lightgrey)
 
-**Google PaLM API only works in the United States.**
+~~Google PaLM API only works in the United States.~~
 
 ## Notice
 
@@ -14,8 +14,10 @@ Also, I dropped the temperature option, you can always add it back.
 
 ## To-do
 
+- **Adapt the latest Google Vertex AI platform for Gemini(pro)**
 - Use .env instead
 - Integrate this with any other AIGC APIs and make this more versatile?
+
 
 ## Example:
 ![](https://github.com/nonefffds/PaLM-Discord-Bot/blob/main/image/test.png)
